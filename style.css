@@ -1,0 +1,108 @@
+/*选择器先写好*/
+* {
+  box-sizing: border-box;
+}
+*:before, *:after{
+  box-sizing: border-box;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+ul,ol{
+  list-style: none;
+}
+/*虽然body的内容区域不是整个网页，可加border看到，但是设置背景色，浏览器会智能的把整个页面设置成所设定的背景色；*/
+body {
+  background: #eeeeee;
+}
+a {
+  color: inherit; text-decoration: none;
+}
+.navHeader{
+  padding: 20px;
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+.searchForm > input {
+border: 1px solid #dddddd;
+  height: 40px;
+  width: 100%;
+  margin-right: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 4px;
+
+}
+.navMain{
+
+}
+.siteList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:0 20px
+
+}
+.siteList > li {
+  background: white;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.siteList  .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px 0;
+  position: relative;
+
+
+}
+.siteList  .site  .logo {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteList  .site  .removeSite {
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #666666;
+}
+.siteList  .site  .link {
+  font-size: 14px;
+  margin-top: 14px;
+
+}
+.navMain .add {
+  width: 160px;
+  min-height: 100px;
+}
+.navMain .add .addIcon{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navMain .add .addText{
+  font-size: 14px;
+  margin-top: 14px;
+}
